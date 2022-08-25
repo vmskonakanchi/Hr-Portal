@@ -1,1 +1,3 @@
-# HR PORTAL APPLICATION USING DJANGO_REST_FRAMEWORK AND ANGULAR
+# HR PORTAL
+## Backend Django , Django Rest Framework
+## Frontend Angular 

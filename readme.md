@@ -2,7 +2,7 @@
 
 ## Tech-Stack Used
 
-* Backend Django , Django Rest Framework
-* Frontend Angular 
+* Backend Express , Node.js
+* Frontend Next.js 
 * Database Postgresql
 * GraphQL for RestApi

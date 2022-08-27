@@ -3,6 +3,6 @@
 ## Tech-Stack Used
 
 * Backend Express , Node.js
-* Frontend Next.js 
-* Database Postgresql
-* GraphQL for RestApi
+* Frontend Angular.js 
+* Database Mongodb
+* GraphQL for Restapi

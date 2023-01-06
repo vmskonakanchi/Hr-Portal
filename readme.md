@@ -1,8 +1,9 @@
-# HR PORTAL
+# Hr Portal Application MERN stack
 
-## Tech-Stack Used
+`This is a portal for HR for managing different stages in the requiruitments which can be used by the Human Resource Teams in an organization`
 
-* Backend Express , Node.js
-* Frontend Angular.js 
-* Database Mongodb
-* GraphQL for Restapi
+
+- ### M - MongoDB Database
+- ### E - Express.js 
+- ### R - React.js
+- ### N - Node.js

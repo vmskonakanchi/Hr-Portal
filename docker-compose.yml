@@ -1,0 +1,64 @@
+version: "3.0"
+
+services:
+
+  db:
+    image: mongo:latest
+    restart: always
+    volumes:
+      - ./dockerdata/db:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - hr
+
+
+  cache:
+    image: redis:latest
+    restart: always
+    volumes:
+      - ./dockerdata/cache:/data
+    ports:
+      - "6379:6379"
+    networks:
+      - hr
+      
+
+  backend:
+    build: ./backend
+    volumes:
+      - .:/code
+
+    environment:
+      - MONGODB_URI=mongodb://db:27017/hrportal
+      - SECRET_KEY=nandamuribalakrishna
+      - PORT=5000
+      - ADMIN_EMAIL = admin@takeoff.com
+      - ADMIN_PASSWORD = takeoff@123
+      - REDIS_HOST=cache
+      - REDIS_PORT=6379
+    ports:
+      - "5000:5000"
+    restart: always
+    networks:
+      - hr
+    depends_on:
+      - db
+      - cache
+
+  frontend:
+    build : ./frontend
+    volumes:
+      - ./dockerdata/proxy:/data
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - hr
+
+networks:
+  hr:
+
+volumes:
+  dockerdata:

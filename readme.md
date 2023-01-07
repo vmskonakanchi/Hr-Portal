@@ -58,19 +58,19 @@
 
 <img src="./screenshots/one.png"/>
 
-## Canidate List
+## Canidates
 <img src="./screenshots/two.png"/>
 
-## User List
+## Users
 <img src="./screenshots/three.png"/>
 
-## Stages List
+## Stages
 <img src="./screenshots/four.png"/>
 
-## Canidate List
+## Departments
 <img src="./screenshots/five.png"/>
 
-## Status List
+## Status
 <img src="./screenshots/six.png"/>
 
 ## *--- Feel free to comment on this project ,  Thanks..!---*
